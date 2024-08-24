@@ -1,0 +1,39 @@
+/* Custom range slider track */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px; /* Adjusted to a thin line */
+  background: #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Hide default slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+/* Custom bullet */
+.custom-slider-bullet {
+  position: absolute;
+  top: 50%; /* Center it vertically */
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: #64b496; /* Bullet color */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent interfering with dragging */
+}
+
+/* Adjust bullet position */
+.custom-slider-container {
+  position: relative;
+  height: 20px; /* Slightly increased height for better alignment */
+  margin-top: 10px; /* Adjust this value if needed */
+}

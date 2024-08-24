@@ -1,0 +1,7 @@
+.hover-target {
+  display: none;
+}
+
+.hover-trigger:hover + .hover-target {
+  display: flex;
+}
